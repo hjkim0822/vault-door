@@ -20,7 +20,7 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_KEY }}
           source: "."
-          target: "~/nodeapp"
+          target: "~/vault-door"
 
       - name: SSH & Restart App
         uses: appleboy/ssh-action@v1.0.0
@@ -29,6 +29,6 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_KEY }}
           script: |
-            cd ~/nodeapp
+            cd ~/vault-door
             npm install
             pm2 restart all || pm2 start index.js --name "nodeapp"
