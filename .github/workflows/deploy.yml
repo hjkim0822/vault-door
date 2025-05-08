@@ -21,6 +21,7 @@ jobs:
           key: ${{ secrets.EC2_KEY }}
           source: "."
           target: "~/vault-door"
+          debug: true
 
       - name: SSH & Restart App
         uses: appleboy/ssh-action@v1.0.0
