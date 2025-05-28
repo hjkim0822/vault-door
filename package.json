@@ -17,5 +17,20 @@
     "url": "https://github.com/hjkim0822/vault-door/issues"
   },
   "homepage": "https://github.com/hjkim0822/vault-door#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "body-parser": "^2.2.0",
+    "botbuilder": "^4.23.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0",
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
 }
