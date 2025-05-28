@@ -16,6 +16,6 @@ app.use(morgan('combined', {
 }));
 
 // Mount feature modules
-app.use('/api', msTeamsModule);
+app.use('/', msTeamsModule);
 
 module.exports = app;
