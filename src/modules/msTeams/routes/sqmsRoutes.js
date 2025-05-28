@@ -1,7 +1,7 @@
 // src/modules/msTeams/routes/msTeamsRoutes.js
 const express = require('express');
 const router = express.Router();
-const sqmsController = require('../controllers/sqmsController');
+const sqmsController = require('../controllers/sqmsControllers');
 
 // // POST webhook from MS Teams
 // router.post('/webhook', sqmsController.handleWebhook);
@@ -23,8 +23,8 @@ const sqmsController = require('../controllers/sqmsController');
   POST /sqms/anomaly - Something
 */
 
-router.post('/sqms', sqmsController.handleAnomaly);
-router.post('/sqms/incident', sqmsController.handleIncident);
-router.post('/sqms/alert', sqmsController.handleAlert); 
+router.post('/', sqmsController.handleAnomaly);
+router.post('/incident', sqmsController.handleIncident);
+router.post('/alert', sqmsController.handleAlert); 
 
 module.exports = router;

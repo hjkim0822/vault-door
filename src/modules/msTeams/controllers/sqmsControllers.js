@@ -1,4 +1,4 @@
-const sqmsService = require('../services/sqmsService');
+const sqmsService = require('../services/sqmsServices');
 
 exports.handleAnomaly = async (req, res) => {
   console.log('[MS Teams Webhook Body]', req.body);
